@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Lieferando</title>
+</head>
+
+<body onload="StartScript()">
+    <header>
+        <img class="lieferando-logo" src="img/lieferando.png" alt="LOGO">
+        <h3>Bahnhofsstraße 3, Karlsruhe</h3>
+        <div class="flag-and-burgerbutton">
+            <img class="flag" src="img/germany.png" alt="">
+            <img class="burgerbutton" src="img/menu-4-64.png" alt="">
+        </div>
+    </header>
+
+
+
+    <main>
+        <div class="menus">
+            <img class="main-pic" src="img/main-pic.jpg" alt="">
+            <div class="logo-container"><img class="restaurant-icon" src="img/joshs-pasta.png" alt=""></div>
+            <h3 class="restaurant-name">JOSH'S PASTA</h3>
+            <nav class="nav-menus">
+                <p>Beliebte Gerichte</p>
+                <p>Pasta</p>
+                <p>Gnocchi</p>
+                <p>Ravioli</p>
+            </nav>
+            <div class="dishes">
+                <h3 class="display-choice">Beliebte Gerichte</h3>
+                <div id="dishes-container"></div>
+
+            </div>
+        </div>
+
+        <div class="shopping-card display-none" id="shopping-card">
+            <h3>WARENKORB</h3>
+            <div id="dishes-in-shopping-card" class="dishes-in-shopping-card">
+                <div class="shopping-bag-section">
+                    <img src="img/shopping-bag-2-64-2.png" alt="">
+                    <p>Wähle leckere Gerichte aus der Karte und wähle Dein Menü.</p>
+                </div>
+            </div>
+
+            <div class="price">
+                <div class="table">
+                    <p>Zwischensumme:</p>
+                    <p id="subtotal">0,00€</p>
+                </div>
+                <div class="table">
+                    <p>Liefergebühren:</p>
+                    <p>3,00€</p>
+                </div>
+
+                <div class="table">
+                    <p><b>Gesamt:</b></p>
+                    <p id="total-sum"><b>0,00€</b></p>
+                </div>
+            </div>
+
+            <div id="minimum-text" class="minimum-text"></div>
+
+            <div id="order-button" class="position-fixed">
+                <div onclick="showOrderSuccess()" class="order-button">Bestellen</div>
+            </div>
+
+            <div id="sc-button-mobile-container" >
+                
+            </div>
+
+        </div>
+
+        <div id="popup" class="order-popup display-none">
+            <h1>Deine Bestellung wurde verschickt!</h1>
+            <p>Vielen Dank für Ihre Bestellung </p>
+            <span onclick="closePopup()" class="close-popup-button">Zurück zur Seite</span>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    <div onclick="showSC()" class="show-shopping-cart">
+        <div class="show-shopping-cart-child">
+            <span>WARENKORB</span>
+            <span class="show-amount-in-shopping-cart display-none" id="show-shopping-cart"></span>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

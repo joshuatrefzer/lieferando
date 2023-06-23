@@ -1,0 +1,445 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(124, 115, 103);
+    padding: 16px;
+}
+
+
+.lieferando-logo {
+    height: 70px;
+}
+
+.flag-and-burgerbutton {
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+}
+
+.flag {
+    height: 30px;
+    padding: 1px;
+    background-color: rgb(215, 201, 180);
+    border-radius: 100px;
+}
+
+.burgerbutton {
+    height: 30px;
+}
+
+
+
+main {
+    display: flex;
+}
+
+.menus {
+    width: 70%;
+    position: relative;
+}
+
+.shopping-card {
+    background-color: white;
+    position: relative;
+    position: fixed;
+    right: 0;
+    top: 100px;
+    width: 30%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 18px;
+    transition: all 225ms ease-in-out;
+}
+
+.shopping-bag-section {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(128, 128, 128, 0.85);
+
+}
+
+
+.shopping-bag-section p {
+    width: 200px;
+    text-align: center;
+}
+
+.order-list {
+    border: solid 1px rgba(128, 128, 128, 0.43);
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 90%;
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+}
+
+
+
+.amount-and-name {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-left: 8px;
+}
+
+.dishes-in-shopping-card {
+    width: 90%;
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.sc-name {
+    max-width: 100px;
+
+}
+
+.price {
+    border-top: solid 1px rgba(128, 128, 128, 0.43);
+    border-bottom: solid 1px rgba(128, 128, 128, 0.409);
+
+}
+
+.icons-and-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 45%;
+    padding-right: 8px;
+}
+
+.price-and-trash {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.sc-icons {
+    height: 15px;
+    padding: 1px;
+    border-radius: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.sc-icons:hover {
+    background-color: rgb(56, 179, 255);
+    cursor: pointer;
+}
+
+.trash-icon:hover {
+    background-color: red;
+}
+
+
+
+.table {
+    width: 90%;
+    display: flex;
+    gap: 30px;
+    height: 30px;
+    justify-content: space-between;
+    color: rgba(128, 128, 128, 0.85);
+    align-items: center;
+
+
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 90%;
+    border-bottom: solid 1px rgba(128, 128, 128, 0.409);
+}
+
+.minimum-text {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    text-align: center;
+    color: rgba(128, 128, 128, 0.85);
+}
+
+.minimum-text p {
+    width: 200px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.order-button {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(166, 166, 255);
+    color: white;
+    font-size: 24px;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+}
+
+.order-button-active {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(39, 39, 254);
+    color: white;
+    font-size: 24px;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+}
+
+.order-button-active:hover {
+    cursor: pointer;
+    background-color: rgba(39, 39, 254, 0.582);
+}
+
+
+
+.position-fixed {
+    position: fixed;
+    bottom: 10px;
+}
+
+
+
+.main-pic {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.nav-menus {
+    display: flex;
+    color: rgb(20, 101, 51);
+    justify-content: space-around;
+    background-color: rgba(185, 185, 185, 0.664);
+}
+
+.nav-menus p:hover {
+    cursor: pointer;
+    color: rgb(203, 0, 0);
+}
+
+.restaurant-name {
+    padding: 20px;
+    font-size: 24px;
+    color: rgb(20, 101, 51);
+}
+
+.restaurant-icon {
+    position: absolute;
+    top: 225px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 150px;
+    border-radius: 100%;
+    outline: 5px solid rgb(134, 134, 134);
+}
+
+.dishes {
+    margin: 20px;
+}
+
+.display-choice {
+    padding: 20px;
+    background-color: rgba(185, 185, 185, 0.664);
+}
+
+.dishes-container {
+    display: flex;
+    justify-content: space-between;
+    border: solid rgba(146, 144, 144, 0.223) 1px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.dishes-container:hover {
+    background-color: rgba(169, 172, 169, 0.187);
+    cursor: pointer;
+}
+
+.plus {
+    height: 20px;
+    padding: 5px;
+    margin: 3px;
+    background-color: rgba(128, 128, 128, 0.288);
+    border-radius: 100%;
+}
+
+.plus:hover {
+    background-color: rgba(146, 177, 113, 0.821);
+    cursor: pointer;
+}
+
+.dish-name {
+    color: rgb(20, 101, 51);
+}
+
+.dish-price {
+    color: rgb(200, 130, 0);
+}
+
+.order-popup {
+    z-index: 60;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: aliceblue;    
+}
+
+.display-none {
+    display: none;
+}
+
+.close-popup-button {
+    padding: 10px;
+    background-color: rgba(128, 12, 12, 0.514);
+    border-radius: 5px;
+}
+
+.close-popup-button:hover {
+    background-color: rgba(166, 81, 81, 0.514);
+    cursor: pointer;
+}
+
+.show-shopping-cart {
+    display: none;
+
+}
+
+.close-shopping-cart {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    left: 10px;
+    padding: 3px;
+    border-radius: 100%;
+}
+
+.close-shopping-cart:hover {
+    cursor: pointer;
+    background-color: rgba(0, 128, 0, 0.275);
+}
+
+
+.close-shopping-cart img {
+    height: 30px;
+}
+
+
+@media(max-width:880px) {
+    .shopping-card {
+        z-index: 50;
+        width: 100%;
+        background-color: white;
+    }
+
+    header h3 {
+        display: none;
+    }
+
+    .menus {
+        width: 100%;
+    }
+
+    .menus h3 {
+        display: none;
+    }
+
+    .nav-menus {
+        padding-top: 100px;
+        background-image: linear-gradient(rgb(255, 255, 255),rgba(181, 151, 107, 0.636));
+    
+    }
+    .show-shopping-cart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(46, 120, 43);
+        position: fixed;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        border-radius: 5px;
+    }
+
+    .show-shopping-cart:hover {
+        background-color: rgb(95, 159, 93);
+        cursor: pointer;
+    }
+
+
+
+    .show-shopping-cart-child {
+        padding: 15px;
+        position: relative;
+    }
+
+    .show-amount-in-shopping-cart {
+        position: absolute;
+        font-size: 10px;
+        top: 0;
+        right: 0;
+        background-color: red;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 5px;
+    }
+
+}
+
+@media(max-width:430px) {
+    .flag {
+        display: none;
+    }
+
+    .dish-description {
+        font-size: 12px;
+    }
+
+    .nav-menus {
+        font-size: 12px;
+    }
+}
